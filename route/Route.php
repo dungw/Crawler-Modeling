@@ -7,10 +7,6 @@
  */
 namespace route;
 
-require_once '../dao/Query.php';
-
-use dao\Query;
-
 abstract class Route
 {
     const ACTIVE = 1;

@@ -1,8 +1,11 @@
 <?php
 namespace route;
 
-require_once '../Query.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/dao/Query.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/route/Route.php';
+
 use dao\Query;
+use route\Route;
 
 abstract class Msc_Route extends Route
 {
@@ -45,7 +48,7 @@ abstract class Msc_Route extends Route
     public function getFromDate()
     {
         if (!$this->dateFrom) {
-            return date('d/m/Y',strtotime("-2 month"));
+            return date('d/m/Y', strtotime("-2 month"));
         }
         return $this->dateFrom;
     }
@@ -98,20 +101,23 @@ abstract class Msc_Route extends Route
     {
         $url = null;
         if (!$this->mode) {
-            $sql = "SELECT * FROM route WHERE category = ". $this->category ." AND page = '". $this->page ."' AND done = 0 AND active = ". self::ACTIVE ." LIMIT 1";
+            $sql = "SELECT * FROM route WHERE category = " . $this->category . " AND page = '" . $this->page . "' AND done = 0 AND active = " . self::ACTIVE . " LIMIT 1";
         } elseif ($this->mode == self::MODE_NEW) {
-            $sql = "SELECT * FROM route WHERE category = ". $this->category ." AND page = '". $this->page ."' AND active = ". self::ACTIVE ." ORDER BY last_time LIMIT 1";
+            $sql = "SELECT * FROM route WHERE category = " . $this->category . " AND page = '" . $this->page . "' AND active = " . self::ACTIVE . " ORDER BY last_time LIMIT 1";
         }
 
-        $db = new Query($sql);
-        if ($row = mysql_fetch_assoc($db->result)) {
+        $query = new Query();
+        $query->execute($sql);
+        $row = $query->resultArray();
+        if (!empty($row)) {
             $url = $row['url'];
         }
-        unset($db);
+        $query->close();
         return $url;
     }
 
-    protected function _getParams() {
+    protected function _getParams()
+    {
         return array();
     }
 }

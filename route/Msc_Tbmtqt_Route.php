@@ -1,6 +1,9 @@
 <?php
 namespace route;
 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/route/Msc_Route.php';
+use route\Msc_Route;
+
 class Msc_Tbmtqt_Route extends Msc_Route
 {
     protected function _getParams()

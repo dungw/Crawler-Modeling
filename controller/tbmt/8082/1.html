@@ -1,0 +1,239 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link href="http://muasamcong.mpi.gov.vn/css/TA.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../gm/css/EP.css">
+        <link rel="stylesheet" type="text/css" href="http://muasamcong.mpi.gov.vn/css/pagetitle_style.css" />
+        <script language='JavaScript' src='/gm/js/EP.js'></script>
+        <script language="javascript">
+            function do_search() {
+            }
+
+            function isEmpty( data ){
+            }
+            function js_upload(){
+            }
+            function filereset() {
+            }
+            function toFileManage(){
+            }
+            function goBack(){
+                history.back();
+            }
+            function goAspTuchal(gongo_no, bid_type) {
+                var gubun = bid_type;
+                var docType = null;
+                window.open("http://muasamcong.mpi.gov.vn:8081/servlet/TC/EP_COV_TCQ302?gonggo_num="+gongo_no+"&gubun="+gubun+"&docType="+docType+"&lang=en","tuchal","left=50, top=50, width=840, height=600, toolbar=no, scrollbars=yes, menubar=no, resizable=yes");
+                //window.open("http://www.g2b.go.kr:8084/servlet/TC/EP_COV_TCQ302?gonggo_num="+gongo_no+"&gubun="+gubun+"&docType="+docType,"tuchal","left=50, top=50, width=840, height=600, toolbar=no, scrollbars=yes, menubar=no, resizable=yes");
+            }
+            function goAspTuch(gonggo_num, gonggo_cha,bid_type) {
+                document.result.method = "post";
+                document.result.action = "http://muasamcong.mpi.gov.vn:8081/GG/EP_MPV_GGQ999.jsp?bid_no="+gonggo_num+"&bid_turnno="+gonggo_cha+"&bid_type="+bid_type;
+                document.result.submit();
+                //window.open("http://muasamcong.mpi.gov.vn:8081/GG/EP_MPV_GGQ999.jsp?bid_no="+gonggo_num+"&bid_turnno="+gonggo_cha+"&bid_type="+bid_type);
+            }
+
+            function goAppGongDongSu(gongo_no) {
+                var x = (screen.width - 420) / 2 ;
+                var y = (screen.height - 400) / 2 ;
+                var gubun = "0";
+                var docType = "ConsortiumAgreement";
+                window.open("http://muasamcong.mpi.gov.vn:8081/servlet/TC/EP_COV_TCQ302?gonggo_num="+gongo_no+"&gubun="+gubun+"&docType="+docType,"goAppGongDongSu","left=50, top=50, width=840, height=600, toolbar=no, scrollbars=yes, menubar=no, resizable=yes");
+            }
+   
+        </script>
+        <title>Danh sách thông báo mời thầu</title>
+    </head>
+
+    <body style=" height : 680px;">
+
+        <div class="col-750 clearfix last">
+            <h1 class="pageTitle"><i class="icon-title"></i>Danh sách TBMT gói thầu Hàng hóa </h1>
+            <!--begin-->
+
+            <form name="result">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td><span class="fontblue">[Màn hình tìm kiếm tra cứu hiện trạng thầu]</td>
+                        <td class=page><p align=right><img src="/img/page.gif" align="absmiddle"> [Số kết quả tìm kiếm  : 2523 kết quả ]</td>
+                    </tr>
+
+                </table>
+                <form name="ebid">
+                    <table width="100%" border="0" cellpadding="2"  cellspacing="1">
+                        <tr height=4><td colspan="8" class="line"></td></tr>
+                        <tr>
+                            <td class="tdac" width="3%">STT</td>
+                            <td class="tdac" width="15%">Số TBMT</td>
+
+                            <td class="tdac" width="15%">Bên mời thầu</td>
+                            <td class="tdac" width="27%">Tên gói thầu</td>
+                           	<td class="tdac" width="10%">Thời điểm đăng tải</td>
+                            		
+                        </tr>
+
+                        
+                        <tr>
+                            <td class="tdbc" >
+                                1
+                            </td>
+                            <td class="tdb" ><a href="#" onclick="goAspTuch('20150703565','00','1');"> 20150703565-00</a></td>
+                            <td class="tdb" >
+                            	Liên doanh Việt - Nga Vietsovpetro
+                            </td>
+                            <td class="tdb" >Cung cấp dụng cụ sự cố năm 2015 cho lô 09-1 theo Đơn hàng của VSP số VT-196/15-KB</td>
+                            <td class="tdb" >13/07/2015 08:40</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdcc" >
+                                2
+                            </td>
+                            <td class="tdc" ><a href="#" onclick="goAspTuch('20150703532','00','1');"> 20150703532-00</a></td>
+                            <td class="tdc" >
+                            	Liên doanh Việt - Nga Vietsovpetro
+                            </td>
+                            <td class="tdc" >Mua Đầu treo ống chống ngầm (Block 12/11) (gói thầu VT-181/15-KB).</td>
+                            <td class="tdc" >13/07/2015 08:40</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdbc" >
+                                3
+                            </td>
+                            <td class="tdb" ><a href="#" onclick="goAspTuch('20150702832','00','1');"> 20150702832-00</a></td>
+                            <td class="tdb" >
+                            	Liên doanh Việt - Nga Vietsovpetro
+                            </td>
+                            <td class="tdb" >Cung cấp Thiết bị điện và vật tư điện năm 2015 cho Lô 09-1 theo Đơn hàng của Vietsovpetro số VT-401/14-CD</td>
+                            <td class="tdb" >08/07/2015 08:41</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdcc" >
+                                4
+                            </td>
+                            <td class="tdc" ><a href="#" onclick="goAspTuch('20150702830','00','1');"> 20150702830-00</a></td>
+                            <td class="tdc" >
+                            	Liên doanh Việt - Nga Vietsovpetro
+                            </td>
+                            <td class="tdc" >Cung cấp Các van tiết lưu và van chặn cho hệ thống chống phun trên MSP theo Đơn hàng của Vietsovpetro số VT-183/15-KB</td>
+                            <td class="tdc" >08/07/2015 08:41</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdbc" >
+                                5
+                            </td>
+                            <td class="tdb" ><a href="#" onclick="goAspTuch('20150702804','00','1');"> 20150702804-00</a></td>
+                            <td class="tdb" >
+                            	Liên doanh Việt - Nga Vietsovpetro
+                            </td>
+                            <td class="tdb" >Gói thầu No.1: Cung cấp Thiết bị Material handling và workshop cho dự án BK-Thiên Ưng (gói thầu No. VT-584/14-HDDK-NKT)</td>
+                            <td class="tdb" >08/07/2015 08:41</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdcc" >
+                                6
+                            </td>
+                            <td class="tdc" ><a href="#" onclick="goAspTuch('20150702797','00','1');"> 20150702797-00</a></td>
+                            <td class="tdc" >
+                            	Liên doanh Việt - Nga Vietsovpetro
+                            </td>
+                            <td class="tdc" >Cung cấp phụ tùng cho động cơ đáy (gói thầu VT-210/15-KB)</td>
+                            <td class="tdc" >08/07/2015 08:41</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdbc" >
+                                7
+                            </td>
+                            <td class="tdb" ><a href="#" onclick="goAspTuch('20150702796','00','1');"> 20150702796-00</a></td>
+                            <td class="tdb" >
+                            	Liên doanh Việt - Nga Vietsovpetro
+                            </td>
+                            <td class="tdb" >Cung cấp phụ tùng cho động cơ đáy (gói thầu VT-210/15-KB)</td>
+                            <td class="tdb" >08/07/2015 08:40</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdcc" >
+                                8
+                            </td>
+                            <td class="tdc" ><a href="#" onclick="goAspTuch('20150702395','00','1');"> 20150702395-00</a></td>
+                            <td class="tdc" >
+                            	Ban quản lý dự án lưới điện TP. HCM
+                            </td>
+                            <td class="tdc" >DEP-NSGNSG3-G2: CUNG CẤP VẬT TƯ THIẾT BỊ VÀ DỊCH VỤ LẮP ĐẶT CÁP NGẦM 110KV, NGĂN XUẤT TUYẾN, ĐẤU NỐI VÀ THÍ NGHIỆM HIỆU CHỈNH</td>
+                            <td class="tdc" >07/07/2015 09:47</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdbc" >
+                                9
+                            </td>
+                            <td class="tdb" ><a href="#" onclick="goAspTuch('20150702275','00','1');"> 20150702275-00</a></td>
+                            <td class="tdb" >
+                            	Tổng công ty Hàng không Việt nam - CTCP
+                            </td>
+                            <td class="tdb" >Nước quả nhãn hiệu 1 hộp 1 lít (Cam,Táo,Cà chua) phục vụ hành khách giai đoạn từ 16/11/2015 đến hết 31/12/2016</td>
+                            <td class="tdb" >07/07/2015 08:42</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tdcc" >
+                                10
+                            </td>
+                            <td class="tdc" ><a href="#" onclick="goAspTuch('20150702250','00','1');"> 20150702250-00</a></td>
+                            <td class="tdc" >
+                            	C�ng ty MDF Vinafor Gia Lai
+                            </td>
+                            <td class="tdc" >Cung cấp thiết bị</td>
+                            <td class="tdc" >07/07/2015 08:42</td>
+                        </tr>
+                        
+                        
+                        <tr height="1"><td colspan="8" class="line"/></tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="1" cellpadding="2"	class="tr">
+                        <tr height=15><td></td></tr>
+                        <tr height="4">
+                            <td align="center">
+                                <input type="button" value="Quay lại" class="commonbutton" onclick= "javascript:history.back();">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <table id='nextBackTable' width=100% border=0 cellpadding=2 cellspacing=2 class=tr><tr><td align=center background=/img/dotlines.gif height=1></td></tr><tr><td align=center class=redc><img align=absmiddle src=/img/bu_backarwn.gif border=0 alt='10Trước'>[1]<a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=2'>[2]</a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=3'>[3]</a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=4'>[4]</a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=5'>[5]</a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=6'>[6]</a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=7'>[7]</a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=8'>[8]</a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=9'>[9]</a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=10'>[10]</a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=11'><img align=absmiddle src=/img/bu_nextarw.gif border=0 alt='10 Sau'></a><a href='/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N&page_no=11'></a></td></tr><tr><td align=center background=/img/dotlines.gif height=1></td></tr></table>
+
+            </form>
+        </div>
+
+        <div class="wrapperfoot"><script language="javascript" src="http://muasamcong.mpi.gov.vn/js/copyright.js" ></script></div>
+    </body>
+</html>
+

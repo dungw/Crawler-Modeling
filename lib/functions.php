@@ -1,16 +1,17 @@
 <?php
-require_once '../common/Constants.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/common/constant/System_Constant.php';
 
-use common\Constants;
+use common\System_Constant;
 
 /**
- * Check environment function
+ * @param $environment
+ * @return string
  */
 function loop($environment)
 {
-    if ($environment == Constants::ENV_PRODUCTION) {
+    if ($environment == System_Constant::ENV_PRODUCTION) {
         $loop = 1;
-    } elseif ($environment == Constants::ENV_DEVELOP) {
+    } elseif ($environment == System_Constant::ENV_DEVELOP) {
         $loop = 100;
     }
     return '<meta http-equiv="refresh" content="'. $loop .'" />';

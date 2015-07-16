@@ -1,0 +1,23 @@
+------------------------------------------------------------------------------------------
+http://muasamcong.mpi.gov.vn:8082/GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N
+
+GET /GG/EP_SSJ_GGQ7011.jsp?gubun=1&fromDate=10/06/2005&toDate=16/07/2015&pageSize=10&pageNo=1&pqCls=Y&bidMethod=&viewType=0&instituName=&instituCode=&isInstitu=&bidNM=&typeFind=1&fromOpenDate=01/01/2010&toOpenDate=31/12/2050&refNumber=&firstCall=N HTTP/1.1
+Host: muasamcong.mpi.gov.vn
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9) Gecko/2008052906 Firefox/3.0
+Connection: Close
+
+HTTP/1.1 404 Not found
+Server: Sun-ONE-Web-Server/6.1
+Date: Thu, 16 Jul 2015 02:49:11 GMT
+Content-length: 1214
+Content-type: text/html
+Set-Cookie: ipmsperf_uuid=-8528782889309653338; expires=Friday, 15-Jul-2016 02:47:43 GMT; path=/
+Connection: close
+
+<... See page contents in 80/1.html ...>
+
+------ Transferred 3kb in 1.0 sec ------

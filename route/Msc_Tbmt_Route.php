@@ -1,6 +1,8 @@
 <?php
 namespace route;
 
+use route\Msc_Route;
+
 class Msc_Tbmt_Route extends Msc_Route
 {
     protected function _getParams()

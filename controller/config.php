@@ -2,19 +2,19 @@
 /**
  * Libraries and helpers
  */
-include '../common/Message.php';
-include '../common/Constants.php';
-include '../lib/simple_html_dom.php';
-include '../lib/phpWebHacks.php';
-include '../lib/functions.php';
-include '../dao/Query.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/common/Message.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/common/constant/System_Constant.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/lib/simple_html_dom.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/lib/phpWebHacks.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/lib/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/dao/Query.php';
 
-use common\Constants;
+use common\System_Constant;
 
 /**
  * Environment settings
  */
-define('ENVIRONMENT', Constants::ENV_DEVELOP);
+define('ENVIRONMENT', System_Constant::ENV_DEVELOP);
 
 /**
  * Common assets

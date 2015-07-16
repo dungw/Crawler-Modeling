@@ -9,13 +9,12 @@ namespace common;
 
 abstract class Model_Dao
 {
-    protected $_iniPath = '../config/';
     protected $_db;
 
     public function __construct()
     {
-        $ini = parse_ini_file($this->_iniPath . 'db.ini');
-        $this->_db = $ini['database'];
+        $ini = parse_ini_file($_SERVER['DOCUMENT_ROOT'] . '/config/db.ini');
+        $this->_db = $ini;
     }
 
 }
